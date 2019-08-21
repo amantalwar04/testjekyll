@@ -12,9 +12,10 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
+import os
+import sys
 # sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('_ext'))
 
 
 # -- Project information -----------------------------------------------------
@@ -48,7 +49,14 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+	'recommonmark',
+	'edit_on_github'
 ]
+
+
+# Configure 'Edit on GitHub' extension
+edit_on_github_project = 'Xilinx/Edge-AI-Platform-Tutorials'
+edit_on_github_branch = 'master'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -57,7 +65,7 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = '.rst', '.md'
 
 # The master toctree document.
 master_doc = 'index'
@@ -83,7 +91,7 @@ pygments_style = None
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx13'
+html_theme = 'xilinx'
 html_theme_path = ["./_themes"]
 
 # Theme options are theme-specific and customize the look and feel of a theme
