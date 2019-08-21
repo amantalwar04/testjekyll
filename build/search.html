@@ -21,7 +21,11 @@
     <link rel="search" title="Search" href="#" />
     <link rel="canonical" href="http://www.sphinx-doc.org/en/master/search.html" />
 
-  <script type="text/javascript" src="searchindex.js" defer></script>
+  <script type="text/javascript">
+    jQuery(function() { Search.loadIndex("searchindex.js"); });
+  </script>
+  
+  <script type="text/javascript" id="searchindexloader"></script>
   
  
 <meta name="keywords" content="Test GitHub Repository"/>
@@ -126,7 +130,7 @@
     containing fewer words won't appear in the result list.
   </p>
   <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" />
+    <input type="text" name="q" value="" />
     <input type="submit" value="search" />
     <span id="search-progress" style="padding-left: 10px"></span>
   </form>

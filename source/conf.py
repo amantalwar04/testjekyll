@@ -55,7 +55,7 @@ extensions = [
 
 
 # Configure 'Edit on GitHub' extension
-edit_on_github_project = 'Xilinx/Edge-AI-Platform-Tutorials'
+edit_on_github_project = 'amantalwar04/testjekyll'
 edit_on_github_branch = 'master'
 
 # Add any paths that contain templates here, relative to this directory.
