@@ -1,37 +1,70 @@
-## Welcome to GitHub Pages
+# Libero SoC v2021.1 Release Notes
 
-You can use the [editor on GitHub](https://github.com/amantalwar04/testjekyll/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+-   [Introduction](GUID-C383C7CB-5610-4272-A465-DA9EF01F3856.md)
+-   [Related Release Notes](GUID-EF155A7E-62F3-47C3-AB8F-705141FE06A7.md)
+-   [Libero SoC Release Notes](GUID-96537B31-03C7-4EF6-87D6-BA982DEB44E2.md)
+    -   [Customer Notification \(CN\) Support](GUID-9BA95D0E-AC37-44BA-AF00-0731123E00A8.md)
+        -   [Disabling SmartDebug Access to sNVM in Libero SoC Debug Policy Settings](GUID-7864D7F3-76BA-49B5-84FA-917DF8EACE1D.md)
+    -   [New Device Support](GUID-E56BF3C1-984C-4740-9D94-91CB7362B117.md)
+        -   [PolarFire SoC](GUID-DF6D001F-B919-4F58-AECC-336152C29533.md)
+        -   [RT PolarFire](GUID-27346B7F-6797-42F5-A4C3-C0F74F76690F.md)
+-   [Software Features and Enhancements](GUID-F7331C45-88A6-4620-982C-03B62E275FB2.md)
+    -   [New RTL Level Clock Domain Crossing Analysis and P&R](GUID-7320ECF4-BABA-43A9-AFB0-C62F884F255C.md)
+    -   [SmartTime CDC Report Enhancements](GUID-4C2A7BAF-F6F4-4FAA-A314-22CA3C80C68B.md)
+    -   [New Post-layout Flow for Adjusting Signal Integrity Parameters and Timing](GUID-F07610C0-8F75-4840-8D12-3AF34732BD03.md)
+    -   [New Components View](GUID-FB3D5350-B16C-4197-BDB0-98B8B7D57BBA.md)
+    -   [System Verilog Multiple-File Compilation Unit](GUID-11730EC2-C72E-42F0-9E02-82AA4FD81187.md)
+    -   [SmartPower Vectorless Activity Estimation](GUID-CD0B6D5D-A42D-457C-9C18-3583A9E2F463.md)
+    -   [Timing Report Explorer Enhancements](GUID-45F6366B-FBDB-4369-8B91-4BB9C2F29A7D.md)
+    -   [Modelsim ME Pro](GUID-2FF0A39B-6FDB-4C19-8094-E805FD7B3971.md)
+    -   [Red Hat Enterprise Linux 8 Support](GUID-1E2FAEDB-BDDC-4A68-B637-18F22A0401FE.md)
+    -   [Verilog and System Verilog Protected Files](GUID-5E641115-BC9B-4350-9AE4-8247E9F91264.md)
+    -   [Enable Back Annotated \(BA\) Simulation for MSS](GUID-AD32A05E-20CA-40B4-B97A-4CC7E7E27A31.md)
+-   [New Silicon Features and Enhancements](GUID-B3E36F2D-0D18-4B9B-BB70-8C4444AB09AF.md)
+    -   [PolarFire SoC](GUID-2B4BDAA0-BCC6-4A8D-82B6-EDFA103E2B8F.md)
+        -   [eNVM Clients for Boot Mode2 and Boot Mode3](GUID-1371FD21-DBD9-4C99-ADDA-EAB29251FE3C.md)
+        -   [Simulation of MSS Streaming interface in User Cryptoprocessor for “S” Devices](GUID-AF2C20FA-AC65-4D38-8F5A-F8C0B3316256.md)
+        -   [Post Layout Simulation](GUID-7C5B500B-EF4A-4F20-9CEA-3C474827413C.md)
+        -   [Export Bitstream Job Option](GUID-65F90C8B-1ACA-4F90-9BEA-39ACE01BB720.md)
+        -   [SmartDebug MSS Read/Write Access](GUID-49A949D1-E273-44B2-9FEF-45A67E1C5139.md)
+    -   [RT PolarFire](GUID-AB6075EF-1B31-4F4D-B562-EC591D6A7FE5.md)
+    -   [PolarFire, RT PolarFire, and PolarFire SoC](GUID-0DF426A6-97DD-4626-83B9-A155BAC489D8.md)
+        -   [Transceiver Incremental DFE Calibration Option for Signal Integrity](GUID-FC3C9A91-5E45-4669-9FF7-73BC98244C04.md)
+        -   [Transceiver Simulation Post-synthesis and Post-layout](GUID-4E64C177-7ED8-45A7-BBFB-1CB8BF56FFB8.md)
+        -   [DDR4 Throughput Enhancement](GUID-9E3D458A-8198-4C25-B89C-CE2221731065.md)
+        -   [I/O Recalibration](GUID-ADD5F818-7C10-493C-BF07-33B12335A8E4.md)
+        -   [SPI Flash Programming Enhancements](GUID-9F05F92D-7646-4A64-B89C-93D24E7F1CC4.md)
+        -   [SmartDebug I/O Tap Delays](GUID-C4296AC3-177C-46BB-86EB-6310ABAE5173.md)
+        -   [Chip Planner Routing View](GUID-FB8856B7-D14A-41E8-A890-D263C7F156AB.md)
+        -   [PolarFire XCVR Sourced Fabric Clocks and Jitter Compensation](GUID-A3B4A66C-8FA8-4D02-8879-B95B107AD27A.md)
+        -   [Tool for Post-layout Flow for Board SI and Timing Tuning](GUID-AE4F3869-F110-4AB5-9B4F-B29A4ADD1A23.md)
+-   [Migrating Designs to Libero SoC](GUID-8EBED074-C192-4863-8AAB-3B173C53502F.md)
+    -   [Design and Core Invalidation](GUID-E23AFEE2-D1BD-4716-B31C-95CCF1CD6F0D.md)
+        -   [PolarFire SoC Designs Layout Invalidation](GUID-85FDF5E9-2E51-4BE7-9862-578E3120E371.md)
+        -   [Core Enhancements and Upgrades](GUID-4AAFBE0F-490E-4D80-AB32-80132EB7998C.md)
+    -   [Updating a Core Version](GUID-824B32DC-6BC2-416F-83CA-55DC02653343.md)
+-   [Resolved Issues](GUID-C0E773C3-D3CC-42D1-BF22-4D90285E6347.md)
+-   [Known Issues and Limitations](GUID-79923716-C787-4D93-ACB8-5C94388F892B.md)
+-   [System Requirements](GUID-CC4B5908-3180-4263-8036-169A59D945A2.md)
+    -   [Supported 64-bit Operating Systems](GUID-D2867AEF-4E2A-4A35-AF1E-88718F4534D2.md)
+    -   [Random-Access Memory \(RAM\) Requirements](GUID-91913AC7-24BE-48B2-8ECB-D265634C9B18.md)
+-   [Download Libero SoC Software](GUID-00970BD8-4896-4AEA-93CA-C7D03CB087D1.md)
+-   [Documents Updated in this Release](GUID-176D93C3-26B5-4892-9C82-BD025C4E981C.md)
+-   [Appendix A: New Device Support Matrices](GUID-E1EB0CF8-9775-4C71-8FE0-EBF817FF541E.md)
+    -   [PolarFire SoC New Device Support Matrices](GUID-AA62735B-8A32-4F51-9974-0DA4C8AC36FD.md)
+    -   [RT PolarFire Licensing and Device/Package Combination Matrix](GUID-F21F61DD-EA8D-43C4-A311-CA21B270FF70.md)
+-   [Revision History](GUID-93B5E101-E120-4C3B-A431-BE12F384F8EE.md)
+-   [Microchip FPGA Technical Support](GUID-F9CF799C-7DEB-461F-9D6C-2A3F3C910ACF.md)
+    -   [Customer Service](GUID-CD4AD298-15F2-44A8-A734-EBEE3A9AF154.md)
+    -   [Customer Technical Support](GUID-CBA128DE-8057-48D6-B166-CC98F5DEEEFC.md)
+    -   [Website](GUID-5A785935-F95C-40F2-8658-BE331AF364D4.md)
+    -   [Outside the U.S.](GUID-C18852E1-B6BB-4741-A0B9-98971D59F6F3.md)
+-   [The Microchip Website](GUID-7551DC67-D79D-4F0C-B56F-7B17E12400E0.md)
+-   [Product Change Notification Service](GUID-CDA512D8-0DE4-4672-8716-04CAC681CB38.md)
+-   [Customer Support](GUID-F05182E4-B102-4775-A746-1FF37F465312.md)
+-   [Microchip Devices Code Protection Feature](GUID-E8251634-7B15-4073-A103-5A5F128B8699.md)
+-   [Legal Notice](GUID-125F1A93-76CC-4BD7-BACA-01844FBD5F4F.md)
+-   [Trademarks](GUID-21750586-F9F2-4E33-87FB-8F2994BF4744.md)
+-   [Quality Management System](GUID-07985EED-D525-413B-AEFE-78B563328687.md)
+-   [Worldwide Sales and Service](GUID-02A694CF-88A5-4ADA-8785-7EEEC62D66EA.md)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/amantalwar04/testjekyll/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
